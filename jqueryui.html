@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!--
+      This page is used to illustrate jQueryUI features.
+    -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!--link href="css/jquery-ui.min.css" rel="stylesheet" / -->
+    <link
+      rel="stylesheet"
+      href="https://code.jquery.com/ui/1.12.1/themes/pepper-grinder/jquery-ui.css"
+    />
+    <link rel="stylesheet" href="css/examples.css" />
+    <title>jQuery UI Examples</title>
+  </head>
+  <body>
+    <header>
+      <img src="images/image1.jpg" alt="Header image" />
+      <nav>
+        <ul>
+          <li>
+            <a href="jqueryui.html">jQuery UI examples</a>
+          </li>
+          <li>
+            <a href="slider.html">Slider</a>
+          </li>
+          <li>
+            <a href="googlemap.html">Google Map</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main id="main">
+      <h3>Examples - jQuery UI</h3>
+      <section id="section1">
+        <div class="container">
+          <button id="opener">open the dialog</button>
+          <div id="dialog" title="Dialog Title">I'm a dialog</div>
+          <div id="login">Login</div>
+          <form
+            id="loginForm"
+            action="http://dgl113.imgd.ca/formprocess.php"
+            title="login form"
+          >
+            <label for="useName">User Name:</label>
+            <input type="text" name="userName" id="userName" />
+            <label for="password">Password:</label>
+            <input type="password" name="password" id="password" />
+          </form>
+        </div>
+        <div id="myaccordion">
+         <!--Here different hx tags are used to show that it's flexible, 
+          though you don't want to do this in your code-->
+
+          <h2>Item 1</h2>
+          <article>item 1 content.</article>
+          <h3>Item 2</h3>
+          <article>item 2 content.</article>
+          <h4>Item 3</h4>
+          <article>item 3 content.</article>
+        </div>
+      </section>
+      <section id="section2">
+        <h3>jQuery UI Tabs</h3>
+        <div id="mytabs">
+          <ul>
+            <li><a href="#tab1">tab-item1</a></li>
+            <li><a href="#tab2">tab-item2</a></li>
+            <li><a href="#tab3">tab-item3</a></li>
+          </ul>
+          <!--Here different hx tags are used to show that it's flexible, 
+            though you don't want to do this in your code-->
+          <article id="tab1">
+            <h2>tab-item1</h2>
+            <p>tab-item1 content</p>
+          </article>
+          <article id="tab2">
+            <h3>tab-item 2</h3>
+            <p>tab-item 2 content</p>
+          </article>
+          <article id="tab3">
+            <h4>tab-item 3</h4>
+            <p>tab-item 3 content</p>
+          </article>
+        </div>
+      </section>
+    </main>
+    <footer id="footer">&copy; DGL113 Introduction to JavaScript</footer>
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/jquery-ui.min.js"></script>
+    <script src="js/dialog-form.js"></script>
+    <script>
+      $("#dialog").dialog(); // This code will open the dialog in default view
+      $("#myaccordion").accordion();
+      $("#mytabs").tabs();
+    </script>
+  </body>
+</html>
