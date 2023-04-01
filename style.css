@@ -28,3 +28,8 @@
 .setFont {
   font-family: fantasy;
 }
+
+#map {
+  width: 100%;
+min-height: 600px;
+}
